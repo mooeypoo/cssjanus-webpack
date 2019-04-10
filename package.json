@@ -1,0 +1,25 @@
+{
+  "name": "@mooeypoo/cssjanus-webpack",
+  "version": "1.0.0",
+  "description": "A webpack plugin wrapper for CSSJanus; a library that flips LTR/RTL directionalities in CSS.",
+  "main": "index.js",
+  "homepage": "https://github.com/mooeypoo/cssjanus-webpack",
+  "bugs": {
+    "url": "https://github.com/mooeypoo/cssjanus-webpack/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mooeypoo/cssjanus-webpack.git"
+  },
+  "keywords": [
+    "css",
+    "language",
+    "i18n",
+    "rtl"
+  ],
+  "author": "Moriel Schottlender",
+  "license": "MIT",
+  "dependencies": {
+    "cssjanus": "^1.3.1"
+  }
+}

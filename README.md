@@ -11,7 +11,7 @@ npm install mooeypoo/cssjsnus-webpack --save-dev
 ```
 In webpack config, require the plugin module
 ```
-const CSSJanusWebpackPlugin = require( './CSSJanusWebpackPlugin.js' );
+const CSSJanusWebpackPlugin = require( 'mooeypoo/cssjsnus-webpack' );
 ```
 Add the plugin to webpack
 ```
