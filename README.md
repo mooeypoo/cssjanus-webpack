@@ -27,6 +27,24 @@ Encore
 	.addPlugin( new CSSJanusWebpackPlugin() );
 ```
 
+## Specifying entry points
+
+You can also specify the specific entries you'd like to create RTL versions for, by passing them into the constructor:
+```
+Encore
+	.addPlugin( new CSSJanusWebpackPlugin( [ 'app' ] ) );
+```
+
+# To use this in templates
+
+In your templates, you can use the RTL stylesheet conditionally when attaching to the twig template.
+For example, if you're using Intuition (or Wikimedia's ToolforgeBundle, which includes Intuition) you can utilize the is_rtl() method to attach an RTL css conditionally:
+
+```
+<link rel="stylesheet" type="text/css" href="{% if is_rtl() %}{{ asset('assets/rtl.app.css') }}{% else %}{{ asset('assets/app.css') }}{% endif %}" />
+```
+
+
 # Development
 
 Please report any bugs or improvement requests in [the github issues](https://github.com/mooeypoo/cssjanus-webpack/issues).
